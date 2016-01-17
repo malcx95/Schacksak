@@ -50,5 +50,5 @@ void ChessWindow::shit() {
 }
 
 void ChessWindow::hej() {
-    //textEdit->append("hej ");
+    std::cout << "HEJHEJ" << std::endl;
 }
