@@ -7,5 +7,6 @@
 
 static const int SCENE_HEIGHT = 500;
 static const int CHESS_DIMENSION = 8;
+static const int SHIT = 0;
 
 #endif //CHESS_CONSTANTS_H
