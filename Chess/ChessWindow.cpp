@@ -37,12 +37,12 @@ ChessWindow::ChessWindow() {
 }
 
 ChessWindow::~ChessWindow() {
-    delete mainPanel;
-    delete comp;
-    delete button;
-    delete shitAction;
-    delete quitAction;
-    delete fileMenu;
+   // delete mainPanel;
+   // delete comp;
+   // delete button;
+   // delete shitAction;
+   // delete quitAction;
+   // delete fileMenu;
 }
 
 void ChessWindow::shit() {

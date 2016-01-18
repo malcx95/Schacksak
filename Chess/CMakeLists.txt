@@ -9,11 +9,11 @@ set(SOURCE_FILES Board.cpp Board.h Pieces/Piece.cpp Pieces/Piece.h PieceType.h P
 add_executable(Chess ${SOURCE_FILES})
 target_link_libraries(Chess Qt4::QtGui Qt4::QtXml)
 
-set(BOOST_ROOT "~/CPPLibraries/boost_1_60_0")
+#set(BOOST_ROOT "~/CPPLibraries/boost_1_60_0")
 
-find_package(Boost 1.57.0)
+#find_package(Boost 1.57.0)
 
-if(NOT Boost_FOUND)
-    message(FATAL_ERROR "Could not find boost!")
-endif()
+#if(NOT Boost_FOUND)
+#    message(FATAL_ERROR "Could not find boost!")
+#endif()
 
