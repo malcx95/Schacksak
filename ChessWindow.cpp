@@ -32,8 +32,10 @@ ChessWindow::ChessWindow() {
     QObject::connect(button, SIGNAL(clicked()), this, SLOT(hej()));
 
     setCentralWidget(mainPanel);
-
+	
     setWindowTitle("WELL HELLO THERE");
+
+	layout->setSizeConstraint(QLayout::SetFixedSize);
 }
 
 ChessWindow::~ChessWindow() {

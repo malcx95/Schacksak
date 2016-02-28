@@ -3,7 +3,6 @@
 //
 
 #include "ChessComponent.h"
-#include "constants.h"
 
 ChessComponent::ChessComponent(QWidget* parent) : QWidget(parent) {
     scene = new QGraphicsScene(0, 0, SCENE_HEIGHT, SCENE_HEIGHT);
@@ -12,6 +11,11 @@ ChessComponent::ChessComponent(QWidget* parent) : QWidget(parent) {
     this->setLayout(layout);
     layout->insertWidget(0, view);
     drawChessSquares();
+	this->selected = nullptr;
+}
+
+void ChessComponent::mousePressEvent(QMouseEvent* event) {
+	setSelectedSquare(event->x(), event->y());
 }
 
 ChessComponent::~ChessComponent() {
@@ -20,7 +24,7 @@ ChessComponent::~ChessComponent() {
 }
 
 void ChessComponent::drawChessSquares() {
-    int squareWidth = SCENE_HEIGHT/8;
+    const int squareWidth = SCENE_HEIGHT/CHESS_DIMENSION;
     bool light = false;
     for (int i = 0; i < CHESS_DIMENSION; ++i) {
         light = !light;
@@ -39,4 +43,8 @@ void ChessComponent::drawChessSquares() {
             scene->addItem(square);
         }
     }
+}
+
+void ChessComponent::setSelectedSquare(int x, int y) {
+	// TODO implement
 }

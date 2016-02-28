@@ -5,7 +5,7 @@
 #ifndef CHESS_CONSTANTS_H
 #define CHESS_CONSTANTS_H
 
-static const int SCENE_HEIGHT = 500;
+static const int SCENE_HEIGHT = 600;
 static const int CHESS_DIMENSION = 8;
 
 #endif //CHESS_CONSTANTS_H
