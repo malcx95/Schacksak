@@ -8,4 +8,6 @@
 static const int SCENE_HEIGHT = 600;
 static const int CHESS_DIMENSION = 8;
 
+enum Color {WHITE, BLACK};
+
 #endif //CHESS_CONSTANTS_H
